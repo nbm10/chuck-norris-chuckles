@@ -1,0 +1,16 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@font-face {
+  font-family: serial-publication;
+  src: url('./assets/fonts/SerialPublicationDEMO.ttf');
+}
+
+body, html {
+  color: #0C0A3E;
+  margin: 0;
+  padding: 0;
+  font-family: "American Typewriter", sans-serif;
+  height: 100%;
+  background: url(./assets/images/5a36a50a51cf12.4390483715135306343351.png) no-repeat center center fixed;
+  background-size: contain;
+  background-color: #F3C677;
+}

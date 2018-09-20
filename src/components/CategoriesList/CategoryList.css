@@ -1,0 +1,9 @@
+.menu {
+    text-align: right;
+    position: relative;
+    z-index: 10;
+    font-size: 1.12em;
+    font-weight: lighter;
+    font-family: serial-publication, sans-serif;
+    margin-right: 2rem;
+}

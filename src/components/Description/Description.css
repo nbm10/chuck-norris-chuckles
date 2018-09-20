@@ -1,0 +1,102 @@
+.description-container {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.description-content {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: serial-publication, Arial, sans-serif;
+    font-size: 4.5rem;
+    border-top: 2px solid #0C0A3E;
+    -webkit-transform: translateY(6rem);
+    transform: translateY(6rem);
+    -webkit-animation: up 500ms linear forwards;
+    animation: up 500ms linear forwards;
+    z-index: 1;
+    margin: auto;
+}
+
+h1::before {
+    top: 1.4rem;
+    -webkit-animation: draw 500ms linear 1s forwards;
+    animation: draw 500ms linear 1s forwards;
+}
+h1::after {
+    bottom: 0.4rem;
+    -webkit-animation: draw 500ms linear 1s forwards;
+    animation: draw 500ms linear 1s forwards;
+}
+
+p {
+    -webkit-transform: translateY(6rem);
+    transform: translateY(6rem);
+    -webkit-animation: up 500ms linear forwards;
+    animation: up 500ms linear forwards;
+    z-index: 1;
+}
+
+p::before {
+    top: 1.4rem;
+    -webkit-animation: draw 500ms linear 1s forwards;
+    animation: draw 500ms linear 1s forwards;
+}
+p::after {
+    bottom: 0.4rem;
+    -webkit-animation: draw 500ms linear 1s forwards;
+    animation: draw 500ms linear 1s forwards;
+}
+
+
+.header-text {
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@-webkit-keyframes up {
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes up {
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes draw {
+    100% {
+        width: 100%;
+    }
+}
+@keyframes draw {
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .header-text {
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    p {
+        font-size: 50%;
+        color: #fff;
+    }
+}
