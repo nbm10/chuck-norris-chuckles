@@ -91,11 +91,11 @@ p::after {
         position: relative;
         overflow: hidden;
     }
-    h1 {
+    .description-content h1 {
         font-size: 1.2rem;
         color: #fff;
     }
-    p {
+    .description-content p {
         font-size: 50%;
         color: #fff;
     }
