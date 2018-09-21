@@ -30,8 +30,8 @@ export class Home extends Component {
 
   render() {
 
-    let joke = this.props.error ?  <p className="error"> Oh Noes! seems like Chuck isn't around right now 😢</p> : <Spinner />;
-    let categories = this.props.error ?  <p className="error"> Oh Noes! seems like Chuck isn't around right now 😢</p> : <Spinner />;
+    let joke = this.props.error ?  <p className="error"> Oh Noes! seems like Chuck isn't around right now <span role="img" aria-label="emoji">😢</span></p> : <Spinner />;
+    let categories = this.props.error ?  <p className="error"> Oh Noes! seems like Chuck isn't around right now <span role="img" aria-label="emoji">😢</span></p> : <Spinner />;
 
     if (this.props.joke) {
       joke = (<Joke joke={this.props.joke.value}/>);
